@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,26 +13,49 @@
             box-sizing: border-box;
         }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Orbitron', sans-serif;
             background-color: black;
             color: white;
-            font-family: 'Orbitron', sans-serif;
-            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
         }
         h1 {
             font-size: 4rem;
-            font-weight: bold;
-            position: relative;
             text-transform: uppercase;
             background: linear-gradient(90deg, silver, white, silver);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: shine 2s infinite linear;
         }
-        
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .opo-card {
+            background-color: #37B7FF;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .opo-card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .privacy-link {
+            margin-top: 20px;
+            display: inline-block;
+            color: #37B7FF;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
         @keyframes shine {
             0% { background-position: -200px; }
             100% { background-position: 200px; }
@@ -40,6 +63,24 @@
     </style>
 </head>
 <body>
-    <h1>GC Project</h1>
+    <div class="container">
+        <h1>GC Project</h1>
+        <p>GC Project es el ecosistema de aplicaciones diseñado para mejorar la organización y productividad en diferentes sectores. Actualmente, nuestra aplicación estrella es Opo Plan.</p>
+        
+        <div class="opo-card">
+            <h2>Opo Plan</h2>
+            <p>Opo Plan es la app ideal para adentrarte en el Sector Público. Diseñada para organizar oposiciones de la mejor manera posible, es apta para candidatos de libre acceso y de promoción interna.</p>
+            <p>Ahorra tiempo y enfócate con nuestras funciones principales:</p>
+            <ul>
+                <li>Busca oposiciones de distintos niveles: Local, Autonómico y Nacional.</li>
+                <li>Accede a información clave como organismo convocante, requisitos y plazas.</li>
+                <li>Recibe actualizaciones sobre cambios legales, exámenes y resultados.</li>
+                <li>Organiza tu estudio con herramientas de seguimiento y planificación.</li>
+            </ul>
+            <p>Descarga Opo Plan y empieza tu camino hacia el éxito.</p>
+        </div>
+        
+        <a href="https://gcproject.es/privacypolicy.html" class="privacy-link">Política de Privacidad</a>
+    </div>
 </body>
 </html>
