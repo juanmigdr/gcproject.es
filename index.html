@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            position: relative;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, silver, white, silver);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 2s infinite linear;
+        }
+        
+        @keyframes shine {
+            0% { background-position: -200px; }
+            100% { background-position: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>GC Project</h1>
+</body>
+</html>
