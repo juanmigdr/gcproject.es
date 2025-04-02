@@ -3,84 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GC Project</title>
+    <title>Opo Plan</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body {
-            font-family: 'Orbitron', sans-serif;
-            background-color: black;
+            font-family: Arial, sans-serif;
+            background-color: #37B7FF;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             text-align: center;
-            padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 4rem;
-            text-transform: uppercase;
-            background: linear-gradient(90deg, silver, white, silver);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 2s infinite linear;
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
         p {
             font-size: 1.2rem;
-            margin: 20px 0;
-        }
-        .opo-card {
-            background-color: #37B7FF;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 20px;
-        }
-        .opo-card img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
-        .privacy-link {
-            margin-top: 20px;
-            display: inline-block;
-            color: #37B7FF;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        .privacy-link:hover {
-            text-decoration: underline;
-        }
-        @keyframes shine {
-            0% { background-position: -200px; }
-            100% { background-position: 200px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>GC Project</h1>
-        <p>GC Project es el ecosistema de aplicaciones diseñado para mejorar la organización y productividad en diferentes sectores. Actualmente, nuestra aplicación estrella es Opo Plan.</p>
-        
-        <div class="opo-card">
-            <h2>Opo Plan</h2>
-            <p>Opo Plan es la app ideal para adentrarte en el Sector Público. Diseñada para organizar oposiciones de la mejor manera posible, es apta para candidatos de libre acceso y de promoción interna.</p>
-            <p>Ahorra tiempo y enfócate con nuestras funciones principales:</p>
-            <ul>
-                <li>Busca oposiciones de distintos niveles: Local, Autonómico y Nacional.</li>
-                <li>Accede a información clave como organismo convocante, requisitos y plazas.</li>
-                <li>Recibe actualizaciones sobre cambios legales, exámenes y resultados.</li>
-                <li>Organiza tu estudio con herramientas de seguimiento y planificación.</li>
-            </ul>
-            <p>Descarga Opo Plan y empieza tu camino hacia el éxito.</p>
-        </div>
-        
-        <a href="https://gcproject.es/privacypolicy.html" class="privacy-link">Política de Privacidad</a>
+        <img src="icon.png" alt="Opo Plan Logo" class="logo">
+        <p>Opo Plan es la app ideal para organizar tus oposiciones de manera eficiente. Encuentra, gestiona y sigue el progreso de tu oposición en un solo lugar.</p>
     </div>
 </body>
 </html>
